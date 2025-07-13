@@ -128,31 +128,5 @@ npm start
 
 ---
 
-## 9. Possible Improvements
 
-- Add WebSocket-based real-time updates for instant slot changes.
-- Provider dashboard for managing slots and bookings.
-- Email/SMS notifications for booking confirmations.
-- More granular permissions (admin, provider, customer).
-- E2E and unit tests for critical flows.
-- Use httpOnly cookies for JWT storage for even better security.
 
----
-
-## 10. Screenshots
-
-*(Add screenshots of the booking flow, slot modal, and bookings list here if you want to impress!)*
-
----
-
-## **Why This Project Stands Out**
-
-- **Concurrency-safe:** No double-booking, even with multiple users.
-- **Modern, clean UI:** Easy for anyone to use.
-- **Production-grade code:** DTOs, validation, error handling, and modular structure.
-- **Real-world ready:** JWT auth, role separation, and scalable DB design.
-
----
-
-**If you have any questions or want to see the code for a specific part, just ask!**
-This project is ready for demo, interview, or real-world use. 
