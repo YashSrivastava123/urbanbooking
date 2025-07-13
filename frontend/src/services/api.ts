@@ -14,7 +14,7 @@ class ApiService {
 
   constructor() {
     this.api = axios.create({
-      baseURL: process.env.REACT_APP_API_URL || 'http://localhost:3001',
+      baseURL: 'http://ec2-65-0-61-0.ap-south-1.compute.amazonaws.com:3000',
       headers: {
         'Content-Type': 'application/json',
       },
