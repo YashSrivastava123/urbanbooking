@@ -127,6 +127,44 @@ npm start
 - Visit `http://localhost:3000` to use the app.
 
 ---
+```
+ Database Setup
 
+ Install PostgreSQL
+**macOS (using Homebrew):**
+```bash
+brew install postgresql
+brew services start postgresql
+```
 
+**Windows:**
+- Download from [PostgreSQL website](https://www.postgresql.org/download/windows/)
+- Install with default settings
+- Remember the password you set for the `postgres` user
 
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+```
+
+#### Create Database
+```bash
+# Connect to PostgreSQL as postgres user
+psql -U postgres
+
+# If you get a permission error, try:
+sudo -u postgres psql
+
+# Create the database
+CREATE DATABASE urban_booking;
+
+# Create a user (optional but recommended)
+CREATE USER urban_user WITH PASSWORD 'your_password';
+GRANT ALL PRIVILEGES ON DATABASE urban_booking TO urban_user;
+
+# Exit PostgreSQL
+\q
+```
